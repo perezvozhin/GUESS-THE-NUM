@@ -19,6 +19,6 @@ def run_game(get_question_and_answer: callable, instruction):
         else:
             print(f"{user_answer} is wrong answer ;(. "
                   f"Correct answer is {correct_answer}.\n"
-                  f"Let's try again, {name}")
+                  f"Let's try again, {name}!")
             return
     print(f'Congratulations, {name}!')
