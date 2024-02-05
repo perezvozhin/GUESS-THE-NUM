@@ -3,7 +3,7 @@ from brain_games.consts import MATH_SIGNS, CALC_INSTRUCTION
 from brain_games.engine import run_game
 
 
-def get_math_expression_and_result():
+def get_math_expression_and_result() -> tuple:
     num1, num2 = random.randint(1, 100), random.randint(1, 100)
     math_action = random.choice(MATH_SIGNS)
     question = f'{num1} {math_action} {num2}'
