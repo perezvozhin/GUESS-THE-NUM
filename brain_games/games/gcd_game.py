@@ -1,6 +1,7 @@
 import random
-from brain_games.engine import run_game
-from brain_games.consts import GCD_INSTRUCTION
+
+
+GCD_INSTRUCTION = 'Find the greatest common divisor of given numbers.'
 
 
 def get_gcd_expression_and_result() -> tuple:
@@ -12,5 +13,5 @@ def get_gcd_expression_and_result() -> tuple:
     return question, str(result)
 
 
-def run_gcd_game():
-    run_game(get_gcd_expression_and_result, GCD_INSTRUCTION)
+gamefunc = get_gcd_expression_and_result
+instruction = GCD_INSTRUCTION

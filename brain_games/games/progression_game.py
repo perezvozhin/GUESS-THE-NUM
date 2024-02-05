@@ -1,7 +1,7 @@
 import random
-from brain_games.consts import (PROGR_INSTRUCTION, PROGR_LENGTH_MIN,
-                                PROGR_LENGTH_MAX)
-from brain_games.engine import run_game
+from brain_games.consts import (PROGR_LENGTH_MAX, PROGR_LENGTH_MIN)
+
+PROGR_INSTRUCTION = 'What number is missing in the progression?'
 
 
 def get_progression_and_answer() -> tuple:
@@ -19,5 +19,5 @@ def get_progression_and_answer() -> tuple:
     return progression_with_missed_num, str(missed_num)
 
 
-def run_progression_game():
-    run_game(get_progression_and_answer, PROGR_INSTRUCTION)
+gamefunc = get_progression_and_answer
+instruction = PROGR_INSTRUCTION

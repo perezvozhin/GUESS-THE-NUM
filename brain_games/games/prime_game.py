@@ -1,6 +1,8 @@
 import random
-from brain_games.consts import PRIME_INSTRUCTION
-from brain_games.engine import run_game
+
+
+PRIME_INSTRUCTION = ('Answer "yes" if given number is prime. Otherwise answer '
+                     '"no".')
 
 
 def is_prime(num):
@@ -20,5 +22,5 @@ def get_num_and_prime_answer() -> tuple:
     return number, answer
 
 
-def run_prime_game():
-    run_game(get_num_and_prime_answer, PRIME_INSTRUCTION)
+gamefunc = get_num_and_prime_answer
+instruction = PRIME_INSTRUCTION
