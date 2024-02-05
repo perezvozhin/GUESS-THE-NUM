@@ -4,7 +4,7 @@ from brain_games.consts import AMOUNT_OF_ROUNDS
 
 def run_game(get_question_and_answer: callable, instruction):
     print("Welcome to the Brain Games!")
-    name = prompt.string(empty=True, prompt="May I have your name? ")
+    name = prompt.string(empty=True, prompt="May I have your name?")
     print(f'Hello, {name}!\n'
           f'{instruction}')
 
@@ -13,7 +13,6 @@ def run_game(get_question_and_answer: callable, instruction):
 
         user_answer = prompt.string(empty=True, prompt=f'Question: {question}\n'
                                     f'Your answer: ')
-
         if user_answer == correct_answer:
             print("Correct!")
         else:
