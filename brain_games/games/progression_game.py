@@ -4,7 +4,7 @@ from brain_games.consts import (PROGR_INSTRUCTION, PROGR_LENGTH_MIN,
 from brain_games.engine import run_game
 
 
-def get_progression_and_answer():
+def get_progression_and_answer() -> tuple:
     start, step = random.randint(1, 100), random.randint(1, 10)
     progression = []
     progression_length = random.randint(PROGR_LENGTH_MIN, PROGR_LENGTH_MAX)
