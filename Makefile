@@ -13,6 +13,9 @@ brain-calc:
 brain-gcd:
 	poetry run brain-gcd
 
+brain-progr:
+	poetry run brain-progr
+
 build:
 	poetry build
 
