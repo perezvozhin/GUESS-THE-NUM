@@ -1,10 +1,12 @@
 import random
-from brain_games.consts import (PROGR_LENGTH_MAX, PROGR_LENGTH_MIN)
-
-PROGR_INSTRUCTION = 'What number is missing in the progression?'
 
 
-def get_progression_and_answer() -> tuple:
+instruction = 'What number is missing in the progression?'
+PROGR_LENGTH_MIN = 5
+PROGR_LENGTH_MAX = 10
+
+
+def start_game() -> tuple:
     start, step = random.randint(1, 100), random.randint(1, 10)
     progression = []
     progression_length = random.randint(PROGR_LENGTH_MIN, PROGR_LENGTH_MAX)
@@ -17,7 +19,3 @@ def get_progression_and_answer() -> tuple:
     progression_with_missed_num = ' '.join(map(str, progression))
 
     return progression_with_missed_num, str(missed_num)
-
-
-gamefunc = get_progression_and_answer
-instruction = PROGR_INSTRUCTION
