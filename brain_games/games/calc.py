@@ -1,6 +1,5 @@
 import random
 
-
 INSTRUCTION = 'What is the result of the expression?'
 MATH_SIGNS = '+', '-', '*'
 

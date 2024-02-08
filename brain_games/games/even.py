@@ -1,11 +1,10 @@
 import random
 
+INSTRUCTION = 'Answer "yes" if the number is even, otherwise answer "no".'
+
 
 def is_even(num):
     return num % 2 == 0
-
-
-INSTRUCTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def generate_round() -> tuple:
