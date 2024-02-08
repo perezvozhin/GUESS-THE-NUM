@@ -5,10 +5,10 @@ def is_even(num):
     return num % 2 == 0
 
 
-instruction = 'Answer "yes" if the number is even, otherwise answer "no".'
+INSTRUCTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def start_game() -> tuple:
+def generate_round() -> tuple:
     num = random.randint(1, 100)
     if is_even(num):
         answer = "yes"

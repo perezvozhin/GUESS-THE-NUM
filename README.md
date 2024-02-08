@@ -3,7 +3,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/3552ce47e1aff5d77927/maintainability)](https://codeclimate.com/github/ArtourBatiskaf/python-project-49/maintainability)
 # PROJECT MIND_GAMES:
 ## 1st project of HEXLET SCHOOL.
-### MIND GAMES is a console game which has 5 regimes to play with.
+MIND GAMES is a console game which has 5 regimes to play with.
 ### BRAIN-EVEN: 
 Regime that allows a player to guess an even number
 [![asciicast](https://asciinema.org/a/0J81x8DG7uc1FVrSg3wbAK3Z9.svg)](https://asciinema.org/a/0J81x8DG7uc1FVrSg3wbAK3Z9)

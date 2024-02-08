@@ -1,21 +1,19 @@
 import random
 
 
-instruction = 'What number is missing in the progression?'
+INSTRUCTION = 'What number is missing in the progression?'
 PROGR_LENGTH_MIN = 5
 PROGR_LENGTH_MAX = 10
 
 
-def start_game() -> tuple:
-    start, step = random.randint(1, 100), random.randint(1, 10)
-    progression = []
-    progression_length = random.randint(PROGR_LENGTH_MIN, PROGR_LENGTH_MAX)
-    for i in range(progression_length):
-        progression.append(start + step * i)
-
-    missed_index = random.randint(0, progression_length - 1)
-    missed_num = progression[missed_index]
-    progression[missed_index] = '..'
-    progression_with_missed_num = ' '.join(map(str, progression))
-
-    return progression_with_missed_num, str(missed_num)
+def generate_round() -> tuple:
+    while True:
+        start, step = (random.randint(1, 100), random.randint(1, 10))
+        end = start + random.randint(1, 100)
+        progression = list(range(start, end + 1, step))
+        if 5 <= len(progression) <= 10:
+            missed_index = random.randint(0, len(progression) - 1)
+            missed_num = progression[missed_index]
+            progression[missed_index] = '..'
+            progression_string = ' '.join(map(str, progression))
+            return progression_string, str(missed_num)

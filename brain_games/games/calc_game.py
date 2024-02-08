@@ -1,11 +1,11 @@
 import random
 
 
-instruction = 'What is the result of the expression?'
+INSTRUCTION = 'What is the result of the expression?'
 MATH_SIGNS = '+', '-', '*'
 
 
-def start_game() -> tuple:
+def generate_round() -> tuple:
     num1, num2 = random.randint(1, 100), random.randint(1, 100)
     math_action = random.choice(MATH_SIGNS)
     question = f'{num1} {math_action} {num2}'

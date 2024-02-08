@@ -1,10 +1,10 @@
 import random
 
 
-instruction = 'Find the greatest common divisor of given numbers.'
+INSTRUCTION = 'Find the greatest common divisor of given numbers.'
 
 
-def start_game() -> tuple:
+def generate_round() -> tuple:
     num1, num2 = random.randint(1, 100), random.randint(1, 100)
     question = f'{num1} {num2}'
     while num2 != 0:
