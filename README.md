@@ -1,7 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/ArtourBatiskaf/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ArtourBatiskaf/python-project-49/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/3552ce47e1aff5d77927/maintainability)](https://codeclimate.com/github/ArtourBatiskaf/python-project-49/maintainability)
-# PROJECT MIND_GAMES:
+# PROJECT BRAIN_GAMES:
 ## 1st project of HEXLET SCHOOL.
 MIND GAMES is a console game which has 5 regimes to play with.
 ### BRAIN-EVEN: 
